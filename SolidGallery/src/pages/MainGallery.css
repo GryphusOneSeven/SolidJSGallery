@@ -1,0 +1,10 @@
+.photoGrid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 5px;
+    width: 100%;
+}
+
+.photo {
+    cursor: "pointer";
+}

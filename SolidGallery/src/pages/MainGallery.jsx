@@ -1,4 +1,5 @@
 import { createSignal } from "solid-js";
+import "./MainGallery.css"
 
 function MainGallery() {
 
@@ -16,13 +17,20 @@ function MainGallery() {
         console.log(tmpList);
     };
 
+    const dummyFunction = () => {
+        console.log("Go to image");
+    }
+
     return (
         <div>
             <h1>Main Gallery Page</h1>
             <button onClick={reloadData}>Fetch Pictures</button>
-            <For each={data()}>{(elem, i) =>
-                <img src={elem.thumbnailUrl}></img>
-            }</For>
+            <br/>
+            <div class="photoGrid">
+                <For each={data()} fallback={<p>Fetching data</p>} >{(elem, i) =>
+                    <img class="photo" src={elem.thumbnailUrl} title={elem.title} onclick={dummyFunction}></img>
+                }</For>
+            </div>
         </div>
     );
 }

@@ -3,8 +3,52 @@
     grid-template-columns: repeat(10, 1fr);
     grid-gap: 5px;
     width: 100%;
+    background-color: lightgray;
 }
 
 .photo {
     cursor: "pointer";
+}
+
+.titleText {
+    text-align: center;
+}
+
+.reloadButton {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #008CBA;
+    font-size: 16px;
+    transition-duration: 0.5s;
+    border: 6px solid transparent;
+    color: white;
+}
+
+.reloadButton:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.loadMoreButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.loadMoreButton {
+    background-color: #008CBA;
+    color: white;
+    font-size: 16px;
+    transition-duration: 0.5s;
+    border: 6px solid transparent;
+}
+
+.loadMoreButton:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
 }

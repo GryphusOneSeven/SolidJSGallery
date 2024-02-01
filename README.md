@@ -1,3 +1,3 @@
 # SolidJSGallery
 
-A mini web application build with SolidJS
+A mini web application built with SolidJS
